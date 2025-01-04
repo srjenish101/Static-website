@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+
+<body>
+    <header class="py-4 px-6 bg-white shadow-sm">
+        <nav class="container mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="rounded-full flex items-center justify-center">
+                    <img src="./assests/images/Group 1116601132.png" class="w-[203px] h-[79px]" alt="">
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-[rgba(0, 36, 105, 1)] font-medium hover:text-blue-700">Home</a>
+                <a href="#" class="text-gray-600 hover:text-[#002469] !important">About Us</a>
+                <a href="#" class="text-gray-600 hover:text-[#002469] !important">Products</a>
+                <a href="#" class="text-gray-600 hover:text-[#002469] !important">Blog</a>
+                <a href="#" class="text-gray-600 hover:text-[#002469] !important">Contact Us</a>
+            </div>
+
+            <!-- Enquire Now Button -->
+            <button class="bg-[#002469] text-white px-4 py-2 rounded-md flex items-center space-x-2 ">
+                <span>Enquire Now</span>
+                <img src="/assests/images/Frame.png" alt="">
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden hover:text-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Shop fresh pan -->
+
+    <div class="bg-[#25395F]">
+        <div class="container mx-auto px-4 min-h-screen relative overflow-hidden ">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-screen">
+                <!-- Left Content -->
+                <div class="z-10 py-20">
+                    <div class="space-y-6">
+                        <div class="text-orange-500 font-medium">
+                            BEST OFFER FOR YOU ——→
+                        </div>
+                        <h1 class="text-5xl font-bold text-white leading-tight">
+                            Shop <span class="text-orange-500">Fresh Farm Produce</span> From Your Place Of Convenience
+                        </h1>
+                        <p class="text-gray-300 max-w-md">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by we injected believable, going to of the middle of text.
+                        </p>
+                        <button
+                            class="bg-[#002469] border-orange-500 border text-white px-6 py-3 rounded-md transition-colors flex items-center gap-2">
+                            Enquire Now
+                            <img src="/assests/images/Frame.png" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Content - Image Slider -->
+                <div class="relative h-[600px] w-full">
+                    <!-- Slide 1 -->
+                    <div class="slide active">
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="./assests/images/Rectangle 3.png" alt="Decorative tile"
+                                class="w-[224px] h-[415px] top-[145px] left-[1196px] top-left-[125px]">
+                            <img src="./assests//images//Rectangle 4.png" alt="Fresh vegetables"
+                                class="w-[224px] h-[415px] top-[328px] left-[1855px] top-left-[125px] transform -rotate-90">
+                            <img src="./assests//images//Rectangle 7.png" alt="Breakfast spread"
+                                class="w-[225px] h-[415px] top-[805px] left-[863px] top-left-[125px] transform rotate-90">
+                            <img src="./assests//images//Rectangle 8.png" alt="Bowl of nuts"
+                                class="w-[222px] h-[415px] top-[995px] left-[1520px] top-left-[125px] transform -rotate-180">
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <!-- <div class="slide">
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="/placeholder.svg?height=300&width=300" alt="Fresh fruits"
+                                class="rounded-lg w-full h-[300px] object-cover">
+                            <img src="/placeholder.svg?height=300&width=300" alt="Farm produce"
+                                class="rounded-lg w-full h-[300px] object-cover">
+                            <img src="/placeholder.svg?height=300&width=300" alt="Organic vegetables"
+                                class="rounded-lg w-full h-[300px] object-cover">
+                            <img src="/placeholder.svg?height=300&width=300" alt="Fresh herbs"
+                                class="rounded-lg w-full h-[300px] object-cover">
+                        </div>
+                    </div> -->
+                    <!-- Slide 3 -->
+                    <!-- <div class="slide">
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="/placeholder.svg?height=300&width=300" alt="Local produce"
+                                class="rounded-lg w-full h-[300px] object-cover">
+                            <img src="/placeholder.svg?height=300&width=300" alt="Seasonal vegetables"
+                                class="rounded-lg w-full h-[300px] object-cover">
+                            <img src="/placeholder.svg?height=300&width=300" alt="Farm fresh"
+                                class="rounded-lg w-full h-[300px] object-cover">
+                            <img src="/placeholder.svg?height=300&width=300" alt="Organic farming"
+                                class="rounded-lg w-full h-[300px] object-cover">
+                        </div>
+                    </div> -->
+
+                    <!-- Slider Navigation -->
+                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                        <button class="dot active w-3 h-3 rounded-full bg-gray-300"></button>
+                        <button class="dot w-3 h-3 rounded-full bg-gray-300"></button>
+                        <button class="dot w-3 h-3 rounded-full bg-gray-300"></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Decorative Elements -->
+            <div class="absolute top-20 right-10">
+                <img src="./assests/images/Group 4.png" alt="">
+            </div>
+            <div class="absolute bottom-20 left-5">
+                <img src="./assests/images/pngwing 7.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Special product -->
+
+    <section class="relative py-8 md:py-12">
+        <!-- Background image with proper handling -->
+        <div class="absolute inset-0 hidden sm:block">
+            <img src="assests/images/ABOUT US.png" alt="About Us Background"
+                class="w-[1500px] h-[200px]  hidden sm:block inset-0 object-cover">
+        </div>
+
+        <div class="container mx-auto lg:pt-32 px-4 lg:px-0 relative">
+            <div class="items-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
+                    <!-- First column -->
+                    <div class="mt-4 space-y-4">
+                        <h4 class="text-[#EF7F1A] text-base md:text-lg mb-3">ESTABLISHED IN 2019</h4>
+                        <h2 class="text-[#1E1E1E] text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 pr-5">Special
+                            Products For Most People</h2>
+                        <button
+                            class="bg-blue-900 text-white px-8 py-3 rounded-md inline-flex items-center gap-2 hover:bg-blue-800 transition-colors w-[186px] ">
+                            More About
+                            <img src="/assests/images/Frame.png" alt="">
+                        </button>
+                    </div>
+
+                    <!-- Second column -->
+                    <div class="md:-mt-16 px-2">
+                        <img src="assests/images/Group 18.png" alt="Group Image" class="w-full h-full">
+                    </div>
+
+                    <!-- Third column -->
+                    <div class="space-y-4 px-4">
+                        <p class="text-[#7F7F7F] text-base md:text-lg leading-[20px]">Tropical Trade Corporation is
+                            positioned at Gujarat, India. We have carved a distinct position in offering a wide range of
+                            products that includes Food & Agro, Ceramic Tiles, Hotel Supplies, Plastic Products,
+                            Printing & Merchandising & etc.</p>
+                        <p class="text-[#7F7F7F] text-base md:text-lg leading-[20px]">We are counted amidst the topmost
+                            Merchant Exporter & supplier of these products across the globe, ensuring the finest
+                            quality.</p>
+                        <p class="text-[#7F7F7F] text-base md:text-lg leading-[20px]">Freshness, great taste, purity,
+                            high nutritional value and longer shelf life are some of the main attributes of our
+                            products.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hottest product  -->
+    <div class="container mx-auto px-4 py-12">
+        <!-- Header Section -->
+        <div class="mb-8">
+            <div class="text-orange-500 font-medium mb-2">
+                SHOP BY CATEGORY ——→
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                        Hottest Products Of The Week
+                    </h1>
+                    <p class="text-gray-600 max-w-2xl">
+                        Freshness, great taste, purity, high nutritional value, and longer shelf life are some of the
+                        main attributes of our products.
+                    </p>
+                </div>
+                <button
+                    class="bg-blue-900 text-white px-6 py-2 mt-4 md:mt-0 rounded flex items-center gap-2 hover:bg-blue-800 transition-colors">
+                    View More
+                    <img src="/assests/images/Frame.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Food & Agro -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md h-auto w-full">
+                <img src="/assests/images/Rectangle 1940.png" alt="Food & Agro" class="w-full h-[255px] object-cover">
+                <div class="p-4 flex items-center justify-center pt-7">
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-900 font-bold leading-[30px]">Food & Agro</h3>
+                </div>
+            </div>
+
+            <!-- Ceramic Tiles -->
+            <div class="product-card bg-[#F7F7F7] rounded-lg overflow-hidden shadow-md h-auto w-full">
+                <img src="/assests/images/Rectangle 1088.png" alt="Ceramic Tiles" class="w-full h-[255px] object-cover">
+                <div class="p-4 flex items-center justify-center pt-7">
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-900 font-bold leading-[30px]">Ceramic Tiles
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Hotel Supplies -->
+            <div class="product-card bg-[#F7F7F7] rounded-lg overflow-hidden shadow-md h-auto w-full">
+                <img src="/assests/images/Rectangle 1940 (1).png" alt="Hotel Supplies"
+                    class="w-full h-[255px] object-cover">
+                <div class="p-4 flex items-center justify-center pt-7">
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-900 font-bold leading-[30px]">Hotel Supplies
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Printing & Merchandising -->
+            <div class="product-card bg-[#F7F7F7] rounded-lg overflow-hidden shadow-md h-auto w-full">
+                <img src="/assests/images/Group 1116601139.png" alt="Printing & Merchandising"
+                    class="w-full h-[255px] object-cover">
+                <div class="p-4 flex items-center justify-center pt-7">
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-900 font-bold leading-[30px]">
+                        Printing & Merchandising
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Plastic Products -->
+            <div class="product-card bg-[#F7F7F7] rounded-lg overflow-hidden shadow-md h-auto w-full">
+                <img src="/assests/images/Rectangle 1941.png" alt="Plastic Products"
+                    class="w-full h-[255px] object-cover">
+                <div class="p-4 flex items-center justify-center pt-7">
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-900 font-bold leading-[30px]">Plastic Products
+                    </h3>
+                </div>
+            </div>
+
+            <!-- COVID-19 Related -->
+            <div class="product-card bg-[#F7F7F7] rounded-lg overflow-hidden shadow-md h-auto w-full">
+                <img src="/assests/images/Rectangle 1942.png" alt="COVID-19 Related"
+                    class="w-full h-[255px] object-cover">
+                <div class="p-4 flex items-center justify-center pt-7">
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-900 font-bold leading-[30px]">COVID-19 Related
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent news  -->
+
+    <section class="recentnews relative">
+        <!-- Background Image -->
+        <div class="absolute mb-24 hidden sm:block">
+            <img src="assests/images/Blog.png" alt="About Us Background"
+                class="w-[831px] h-[245px] inset-0 object-cover ps-10">
+        </div>
+
+        <div class="container mx-auto  lg:pt-32 px-4 lg:px-0">
+            <!-- Header Section -->
+            <div class="text-center mb-12">
+                <div class="text-orange-500 font-medium mb-4">BLOG ——→</div>
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Recent News</h1>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Freshness, great taste, purity, high nutritional value, and longer
+                    shelf life are some of the main attributes of our products.
+                </p>
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <!-- Blog Post 1 -->
+                <div class="blog-card bg-white rounded-lg overflow-hidden shadow-lg h-[588px] w-">
+                    <img src="/assests/images/Rectangle 1099.png" alt="Fresh vegetables"
+                        class="w-full h-[366px] object-cover" />
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            June 15 2020
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            National Association Of Wheats Growers
+                        </h3>
+                        <div class="flex items-center gap-3">
+                            <img src="/assests/images/Ellipse 3.png" alt="Lisa Smith" class="w-10 h-10 rounded-full" />
+                            <div>
+                                <p class="text-orange-500 font-medium">Lisa Smith</p>
+                                <p class="text-sm text-gray-600">Admin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="blog-card bg-white rounded-lg overflow-hidden shadow-lg h-[588px]">
+                    <img src="/assests/images/Rectangle 1000.png" alt="Various fruits and nuts"
+                        class="w-full h-[366px] object-cover" />
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            June 15 2020
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            Awesome Freeze Concern Hits Wheat Farms
+                        </h3>
+                        <div class="flex items-center gap-3">
+                            <img src="/assests/images/Ellipse 3.png" alt="Ryan Thomas" class="w-10 h-10 rounded-full" />
+                            <div>
+                                <p class="text-orange-500 font-medium">Ryan Thomas</p>
+                                <p class="text-sm text-gray-600">Admin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="blog-card bg-white rounded-lg overflow-hidden shadow-lg h-[588px]">
+                    <img src="/assests/images/Rectangle 1001.png" alt="Nuts and grains"
+                        class="w-full h-[366px] object-cover" />
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            June 15 2020
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            The Best Ways Consumer Trends Impact
+                        </h3>
+                        <div class="flex items-center gap-3">
+                            <img src="/assests/images/Ellipse 3.png" alt="Ryan Thomas" class="w-10 h-10 rounded-full" />
+                            <div>
+                                <p class="text-orange-500 font-medium">Ryan Thomas</p>
+                                <p class="text-sm text-gray-600">Admin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More Button -->
+            <div class="text-center">
+                <button
+                    class="bg-blue-900 text-white px-8 py-3 rounded-md inline-flex items-center gap-2 hover:bg-blue-800 transition-colors">
+                    View More
+                    <img src="/assests/images/Frame.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="absolute mb-24 hidden sm:block right-0 bottom-28 w-[215px] h-[318px]">
+            <img src="assests/images/pngwing 7.png" alt="About Us Background" class="inset-0 object-cover ps-10">
+        </div>
+    </section>
+
+    <!-- provideservices -->
+
+    <section class="provideservices  lg:pt-20 px-4 lg:px-0 lg:pb-20 relative">
+        <div class="absolute bottom-4 left-5">
+            <img src="./assests/images/pngwing 7.png" class="w-[215px] h-[318px]" alt="">
+        </div>
+        <div class="container mx-auto max-w-8xl">
+            <!-- Header Section -->
+            <div class="text-center mb-16 pt-10">
+                <div class="text-orange-500 font-medium mb-4 flex items-center justify-center gap-2">
+                    WHAT WE DO FOR YOU
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-900">
+                    We Provide Our Service With Our Expert Team
+                </h1>
+            </div>
+
+            <!-- Team Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+                <!-- Team Member 1 -->
+                <div class="team-card rounded-lg overflow-hidden shadow-md w-[342px] h-[457px]">
+                    <img src="/assests/images/Rectangle 1104.png" alt="Emily Blunts"
+                        class="w-full w-[342px] h-[380px] aspect-[3/4] object-cover">
+                    <div class="image-overlay"></div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="p-4 text-center bg-[white]">
+                        <h3 class="text-xl font-semibold text-gray-900">Emily Blunts</h3>
+                        <p class="text-gray-600">CEO Interior</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card rounded-lg overflow-hidden shadow-md w-[342px] h-[457px]">
+                    <img src="/assests/images/Rectangle 1106.png" alt="Willie Rocke"
+                        class="w-[342px] h-[380px] aspect-[3/4] object-cover ">
+                    <div class="image-overlay"></div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="p-4 text-center bg-[white]">
+                        <h3 class="text-xl font-semibold text-gray-900">Willie Rocke</h3>
+                        <p class="text-gray-600">CEO Interior</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card rounded-lg overflow-hidden shadow-md w-[342px] h-[457px]">
+                    <img src="/assests/images/Rectangle 1105.png" alt="Jean Scotter"
+                        class="w-full w-[342px] h-[380px] aspect-[3/4] object-cover">
+                    <div class="image-overlay"></div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="p-4 text-center bg-[white]">
+                        <h3 class="text-xl font-semibold text-gray-900">Jean Scotter</h3>
+                        <p class="text-gray-600">CEO Interior</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-card rounded-lg overflow-hidden shadow-md w-[342px] h-[457px]">
+                    <img src="/assests/images/Rectangle 1104.png" alt="Mendas Root"
+                        class="w-full w-[342px] h-[380px] aspect-[3/4] object-cover">
+                    <div class="image-overlay"></div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="p-4 text-center bg-[white]">
+                        <h3 class="text-xl font-semibold text-gray-900">Mendas Root</h3>
+                        <p class="text-gray-600">CEO Interior</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="bg-[#25395F] text-white py-12 relative">
+        <div class="absolute hidden sm:block top-[12px] left-[0]">
+            <img src="assests/images/div.pattern-layer-one.png" alt="About Us Background"
+                class="inset-0 object-cover w-[387px] h-[433px]">
+        </div>
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Logo and Contact Section -->
+                <div class="flex flex-col items-start gap-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                            <span class="text-[#1e3a8a] font-bold text-xl">TTC</span>
+                        </div>
+                        <span class="text-lg font-semibold">Tropical Trade Corporation</span>
+                    </div>
+                    <button
+                        class="px-6 py-2 border border-white rounded-md hover:bg-white hover:text-[#1e3a8a] transition-colors">
+                        Contact
+                    </button>
+                </div>
+
+                <!-- Company Links -->
+                <div>
+                    <h3 class="text-orange-500 font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-300">About Company</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Products</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Links -->
+                <div>
+                    <h3 class="text-orange-500 font-semibold mb-4">Customer</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-300">Help And Support</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Shipping And Delivery</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Payment Method</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Terms And Conditions</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="mt-8 text-center">
+                <p class="mb-4">Followers :</p>
+                <div class="flex justify-center gap-4">
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white text-[#1e3a8a] flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white text-[#1e3a8a] flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white text-[#1e3a8a] flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white text-[#1e3a8a] flex items-center justify-center hover:bg-gray-200">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute hidden sm:block top-[12px] right-[0]">
+            <img src="assests/images/div.pattern-layer-two.png" alt="About Us Background"
+                class="inset-0 object-cover w-[387px] h-[433px]">
+        </div>
+    </footer>
+    <hr>
+    <div class="w-full py-4 bg-[#25395F]">
+        <p class="text-center text-sm text-gray-400">
+            Tropical Trade Corporation Proudly Powered by Themeszab
+        </p>
+    </div>
+</body>
+<script src="./assests/js/script.js"></script>
+
+</html>

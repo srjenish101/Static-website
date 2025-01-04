@@ -1,0 +1,100 @@
+.slide {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+}
+.slide.active {
+    opacity: 1;
+}
+.dot {
+    transition: background-color 0.3s ease;
+}
+.dot.active {
+    background-color: #F97316;
+}
+
+.product-card {
+    transition: transform 0.3s ease-in-out;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card {
+    transition: transform 0.3s ease;
+}
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+.blog-background {
+    background-color: #FDF8F3;
+}
+
+.team-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.social-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 20;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(30, 42, 74, 0);
+    transition: background 0.3s ease;
+    z-index: 10;
+}
+
+.team-card:hover .image-overlay {
+    background: rgba(30, 42, 74, 0.7);
+}
+
+.team-card:hover .social-icons {
+    opacity: 1;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+    .team-card {
+        margin: 0 auto;
+        max-width: 320px;
+    }
+}
