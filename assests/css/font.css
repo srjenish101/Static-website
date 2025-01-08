@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'Nunito Sans 10pt Expanded';
+    src: url('NunitoSans10ptExpanded-Italic.woff2') format('woff2'),
+        url('NunitoSans10ptExpanded-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt Expanded';
+    src: url('NunitoSans10ptExpanded-ExtraLightItalic.woff2') format('woff2'),
+        url('NunitoSans10ptExpanded-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt Expanded';
+    src: url('NunitoSans10ptExpanded-ExtraBoldItalic.woff2') format('woff2'),
+        url('NunitoSans10ptExpanded-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt SemiExpanded';
+    src: url('NunitoSans10ptSemiExpanded-Italic.woff2') format('woff2'),
+        url('NunitoSans10ptSemiExpanded-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt SemiExpanded';
+    src: url('NunitoSans10ptSemiExpanded-ExtraLightItalic.woff2') format('woff2'),
+        url('NunitoSans10ptSemiExpanded-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt Expanded';
+    src: url('NunitoSans10ptExpanded-BlackItalic.woff2') format('woff2'),
+        url('NunitoSans10ptExpanded-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt SemiExpanded';
+    src: url('NunitoSans10ptSemiExpanded-LightItalic.woff2') format('woff2'),
+        url('NunitoSans10ptSemiExpanded-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt Expanded';
+    src: url('NunitoSans7ptExpanded-BlackItalic.woff2') format('woff2'),
+        url('NunitoSans7ptExpanded-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt SemiExpanded';
+    src: url('NunitoSans10ptSemiExpanded-SemiBoldItalic.woff2') format('woff2'),
+        url('NunitoSans10ptSemiExpanded-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt';
+    src: url('NunitoSans10pt-ExtraBoldItalic.woff2') format('woff2'),
+        url('NunitoSans10pt-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt';
+    src: url('NunitoSans10pt-BlackItalic.woff2') format('woff2'),
+        url('NunitoSans10pt-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt Expanded';
+    src: url('NunitoSans7ptExpanded-BoldItalic.woff2') format('woff2'),
+        url('NunitoSans7ptExpanded-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt SemiExpanded';
+    src: url('NunitoSans7ptSemiExpanded-BoldItalic.woff2') format('woff2'),
+        url('NunitoSans7ptSemiExpanded-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt Expanded';
+    src: url('NunitoSans7ptExpanded-MediumItalic.woff2') format('woff2'),
+        url('NunitoSans7ptExpanded-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt Expanded';
+    src: url('NunitoSans7ptExpanded-Italic.woff2') format('woff2'),
+        url('NunitoSans7ptExpanded-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt Expanded';
+    src: url('NunitoSans7ptExpanded-SemiBoldItalic.woff2') format('woff2'),
+        url('NunitoSans7ptExpanded-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt SemiExpanded';
+    src: url('NunitoSans7ptSemiExpanded-BlackItalic.woff2') format('woff2'),
+        url('NunitoSans7ptSemiExpanded-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt SemiCondensed';
+    src: url('NunitoSans7ptSemiCondensed-BlackItalic.woff2') format('woff2'),
+        url('NunitoSans7ptSemiCondensed-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt Condensed';
+    src: url('NunitoSans10ptCondensed-LightItalic.woff2') format('woff2'),
+        url('NunitoSans10ptCondensed-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('NunitoSans7pt-Italic.woff2') format('woff2'),
+        url('NunitoSans7pt-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt SemiExpanded';
+    src: url('NunitoSans7ptSemiExpanded-MediumItalic.woff2') format('woff2'),
+        url('NunitoSans7ptSemiExpanded-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt Condensed';
+    src: url('NunitoSans10ptCondensed-BoldItalic.woff2') format('woff2'),
+        url('NunitoSans10ptCondensed-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('NunitoSans7pt-ExtraBoldItalic.woff2') format('woff2'),
+        url('NunitoSans7pt-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt Condensed';
+    src: url('NunitoSans10ptCondensed-Italic.woff2') format('woff2'),
+        url('NunitoSans10ptCondensed-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt SemiExpanded';
+    src: url('NunitoSans7ptSemiExpanded-SemiBoldItalic.woff2') format('woff2'),
+        url('NunitoSans7ptSemiExpanded-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt SemiExpanded';
+    src: url('NunitoSans7ptSemiExpanded-Italic.woff2') format('woff2'),
+        url('NunitoSans7ptSemiExpanded-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt SemiExpanded';
+    src: url('NunitoSans7ptSemiExpanded-ExtraBoldItalic.woff2') format('woff2'),
+        url('NunitoSans7ptSemiExpanded-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt Expanded';
+    src: url('NunitoSans10ptExpanded-MediumItalic.woff2') format('woff2'),
+        url('NunitoSans10ptExpanded-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt Expanded';
+    src: url('NunitoSans10ptExpanded-LightItalic.woff2') format('woff2'),
+        url('NunitoSans10ptExpanded-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt Expanded';
+    src: url('NunitoSans10ptExpanded-BoldItalic.woff2') format('woff2'),
+        url('NunitoSans10ptExpanded-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+

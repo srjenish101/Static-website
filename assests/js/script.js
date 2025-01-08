@@ -85,4 +85,13 @@ contactButton.addEventListener('click', () => {
     console.log('Contact button clicked');
 });
 
+const button = document.querySelector('#menu-button');
+const menu = document.querySelector('#menu');
+
+
+button.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+
+
 
