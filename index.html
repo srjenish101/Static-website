@@ -129,7 +129,7 @@
             <button
               class="bg-blue-900 text-white px-8 py-3 rounded-md inline-flex items-center gap-2 hover:bg-blue-800 transition-colors w-[186px]">
               More About
-              <img src="/assests/images/Frame.png" alt="" />
+              <img src="./assests/images/right.png" alt="" />
             </button>
           </div>
 
@@ -178,7 +178,7 @@
         <button
           class="bg-blue-900 text-white px-6 py-2 mt-4 md:mt-0 rounded flex items-center gap-2 hover:bg-blue-800 transition-colors">
           View More
-          <img src="./assests/images/Frame.png" alt="" />
+          <img src="./assests/images/right.png" alt="" />
         </button>
       </div>
     </div>
@@ -250,7 +250,7 @@
 
   <!-- counter Number -->
   <section class="bg-[url('./assests/images/counter-bg.png')] lg:pt-20 px-4 lg:px-0 lg:pb-20 relative pt-10 pb-12">
-    <div class="container">
+    <div class="container mx-auto px-4 py-12">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- Stat Card 1 -->
@@ -390,7 +390,7 @@
         <button
           class="bg-blue-900 text-white px-8 py-3 rounded-md inline-flex items-center gap-2 hover:bg-blue-800 transition-colors">
           View More
-          <img src="./assests/images/Frame.png" alt="" />
+          <img src="./assests/images/right.png" alt="" />
         </button>
       </div>
     </div>
@@ -667,7 +667,7 @@
           <div class="flex items-center justify-between">
             <!-- Previous Button -->
             <button onclick="prevSlide()"
-              class="hidden md:block absolute left-0 z-10 p-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors"
+              class="hidden md:block absolute -left-24 z-10 p-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors"
               aria-label="Previous testimonial">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -682,7 +682,7 @@
 
             <!-- Next Button -->
             <button onclick="nextSlide()"
-              class="hidden md:block absolute right-0 z-10 p-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors"
+              class="hidden md:block absolute -right-24 z-10 p-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors"
               aria-label="Next testimonial">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -761,7 +761,7 @@
   </section>
 
   <!-- footer -->
-  <footer class="bg-[#25395F] text-white pt-12 relative">
+  <footer class="bg-[#25395F] text-white pt-14  relative">
     <div class="absolute hidden sm:block top-[12px] left-0">
       <img src="assests/images/div.pattern-layer-one.png" alt="About Us Background"
         class="inset-0 object-cover w-[200px] h-[220px] lg:w-[387px] lg:h-[433px]" />
@@ -839,13 +839,12 @@
         </div>
       </div>
     </div>
-    <div class="absolute hidden sm:block top-[12px] right-0">
+    <div class="absolute hidden sm:block top-[10px] right-0">
       <img src="assests/images/div.pattern-layer-two.png" alt="About Us Background"
         class="inset-0 object-cover w-[200px] h-[220px] lg:w-[387px] lg:h-[433px]" />
     </div>
-    <hr />
-    <div class="py-3 bg-[#25395F]">
-      <p class="text-left text-sm md:text-base text-gray-400 ps-20">
+    <div class="py-3 bg-[#25395F] pt-20 ">
+      <p class="text-left text-sm md:text-base text-gray-400 ps-20 border-t-[1px] pt-4 text-center">
         Tropical Trade Corporation Proudly Powered by Themeszab
       </p>
     </div>
@@ -855,95 +854,6 @@
 </body>
 <script src="./assests/js/script.js"></script>
 
-<script>
-  const testimonials = [
-    {
-      id: 1,
-      name: "Michel Clark",
-      image: "./assests/images/slider-img.png",
-      rating: 5,
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of."
-    },
-    {
-      id: 2,
-      name: "Michel dref",
-      image: "./assests/images/slider-img.png",
-      rating: 5,
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of."
-    },
-    {
-      id: 3,
-      name: "Michel abs",
-      image: "./assests/images/slider-img.png",
-      rating: 5,
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of."
-    }
-  ];
 
-  let currentIndex = 0;
-
-  function createStarRating(rating) {
-    return Array(rating).fill().map(() => `
-          <svg class="w-4 h-4 fill-current text-yellow-400" viewBox="0 0 20 20">
-              <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-          </svg>
-      `).join('');
-  }
-
-  function createTestimonialCard(testimonial) {
-    return `
-          <div class="w-full max-w-md bg-white rounded-lg p-6 shadow-lg transition-transform duration-300">
-              <div class="flex items-center gap-4 mb-4">
-                  <div class="w-10 h-10 rounded-full overflow-hidden">
-                      <img src="${testimonial.image}" alt="${testimonial.name}" class="w-full h-full object-cover">
-                  </div>
-                  <div>
-                      <h3 class="font-semibold">${testimonial.name}</h3>
-                      <div class="flex">
-                          ${createStarRating(testimonial.rating)}
-                      </div>
-                  </div>
-              </div>
-              <blockquote class="text-gray-600">
-                  "${testimonial.text}"
-              </blockquote>
-          </div>
-      `;
-  }
-
-  function updateSlides() {
-    const container = document.getElementById('testimonialContainer');
-    const nextIndex = (currentIndex + 1) % testimonials.length;
-
-    container.innerHTML =
-      createTestimonialCard(testimonials[currentIndex]) +
-      createTestimonialCard(testimonials[nextIndex]);
-
-    // Add fade effect
-    const cards = container.querySelectorAll('div');
-    cards.forEach(card => {
-      card.style.opacity = '0';
-      setTimeout(() => {
-        card.style.opacity = '1';
-      }, 50);
-    });
-  }
-
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % testimonials.length;
-    updateSlides();
-  }
-
-  function prevSlide() {
-    currentIndex = currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1;
-    updateSlides();
-  }
-
-  // Initialize the slider
-  updateSlides();
-
-  // Auto-slide every 5 seconds
-  setInterval(nextSlide, 5000);
-</script>
 
 </html>
