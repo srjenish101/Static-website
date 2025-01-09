@@ -6,27 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assests/css/font.css">
   <link rel="stylesheet" href="./assests/css/style.css" />
 </head>
 
 <body>
-  <header>
-    <nav class="
-             flex flex-wrap
-             items-center
-             justify-between
-             w-full
-             py-4
-             md:py-0
-             px-4
-             text-lg text-gray-700
-             bg-white
-             container
-             mx-auto
-           ">
+
+  <!-- header  -->
+
+  <header class="overflow-hidden">
+    <nav
+      class="flex flex-wrap items-center justify-between w-full py-4 md:py-4 px-4 text-lg text-gray-700 bg-white container mx-auto ">
       <div>
         <img src="./assests/images/Group 1116601132.png" class="w-[150px]" alt="" />
-
       </div>
 
       <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
@@ -35,18 +27,12 @@
       </svg>
 
       <div class="hidden w-full md:flex md:items-center md:justify-between md:w-auto" id="menu">
-        <ul class="
-                 pt-4
-                 text-base text-gray-700
-                 md:flex
-                 md:justify-between 
-                 md:pt-0
-                 md:pe-80">
+        <ul class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0 md:pe-80">
           <li>
             <a class="md:p-4 py-2 font-semibold block text-gray-600 hover:text-[#002469]" href="./index.html">Home</a>
           </li>
           <li>
-            <a class="md:p-4 py-2 block font-semibold  text-gray-600 hover:text-[#002469]"
+            <a class="md:p-4 py-2 block font-semibold text-gray-600 hover:text-[#002469]"
               href="./About/about.html">About Us</a>
           </li>
           <li>
@@ -62,12 +48,11 @@
               Us</a>
           </li>
         </ul>
-        <!-- Enquire Now Button -->
+
         <button class="bg-[#002469] text-white px-4 py-2 rounded-md flex items-center space-x-2">
           <span> Enquire Now <i class="fa-solid fa-angles-right"></i> </span>
           <img src="./assests/images/right.png" alt="" />
         </button>
-
       </div>
     </nav>
   </header>
@@ -75,11 +60,12 @@
   <!-- Shop fresh pan -->
 
   <div class="bg-[#25395F]">
-    <div class="container mx-auto px-4 py-16">
+    <div class="container mx-auto md:px-4 px-2 py-16">
       <div class="flex flex-col md:flex-row">
-        <div class="space-y-6 md:w-[40%] md:py-28 px-10 md:px-0 relative">
+        <div class="space-y-6 md:w-[40%] md:py-28 px-5 md:px-0 relative">
           <p class="text-orange-500 mb-2">BEST OFFER FOR YOU -----→</p>
-          <h1 class="md:text-[60px] text-xl font-semibold text-white leading-tight">
+          <h1 class="md:text-[50px] text-xl font-semibold text-white "
+            style=" font-family: Nunito Sans, sans-serif; line-height: 80px;">
             Shop
             <span class="text-orange-500">Fresh Farm <br />Produce</span> From
             Your<br />Place Of Convenience
@@ -98,7 +84,7 @@
           </div>
         </div>
 
-        <div class="space-y-6 md:w-[60%]">
+        <div class="space-y-6 md:w-[60%] md:mt-0 mt-5 md:mx-0 mx-3">
           <div>
             <img src="./assests/images/banner-img.png" alt="Decorative tile pattern" class="w-full" />
           </div>
@@ -109,36 +95,38 @@
 
   <!-- Special product -->
 
-  <section class="relative py-8 md:py-12">
-    <div class="absolute inset-0 hidden sm:block">
-      <img src="assests/images/ABOUT US.png" alt="About Us Background"
-        class="w-[1500px] h-[200px] hidden sm:block inset-0 object-cover" />
+  <section class="relative py-5 md:py-12">
+    <div class="absolute md:top-0 top-[158px]">
+      <img src="assests/images/ABOUT US.png" alt="About Us Background" class="md:w-[1500px] md:h-[200px]" />
     </div>
 
-    <div class="container mx-auto lg:pt-32 px-4 lg:px-0 relative">
+    <div class="container mx-auto lg:pt-32 px-2 md:px-0 relative">
       <div class="items-center">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
-          <!-- First column -->
-          <div class="mt-4 space-y-4">
-            <h4 class="text-[#EF7F1A] text-base md:text-lg mb-3">
-              ESTABLISHED IN 2019
+
+          <div class="mt-4 space-y-2">
+            <h4 class="text-[#EF7F1A] text-base md:text-lg mb-2 font-semibold">
+              ESTABLISHED IN 2019<img src="../assests/images/Line 2.png"
+                class="inline-block md:ms-2 ms-2 pt-0 w-[30px] md:w-[40px]" alt="Line Decoration" />
             </h4>
-            <h2 class="text-[#1E1E1E] text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 pr-5">
-              Special Products For Most People
+            <h2 class="text-[#1E1E1E] text-3xl md:text-4xl leading-tight mb-4 pr-5 md:font-extrabold font-semibold pb-4"
+              style="line-height: 50px;">
+              Special Products
+              <br />
+              For Most People
             </h2>
             <button
-              class="bg-blue-900 text-white px-8 py-3 rounded-md inline-flex items-center gap-2 hover:bg-blue-800 transition-colors w-[186px]">
+              class="bg-blue-900 text-white px-8 py-3 rounded-md inline-flex items-center gap-2 md:flex hidden w-[186px] border border-[#EA6E00]">
               More About
-              <img src="./assests/images/right.png" alt="" />
+              <img src="/assests/images/right.png" alt="" />
             </button>
           </div>
 
-          <!-- Second column -->
+
           <div class="md:-mt-16 px-2">
             <img src="assests/images/Group 18.png" alt="Group Image" class="w-full h-full" />
           </div>
 
-          <!-- Third column -->
           <div class="space-y-4 px-4">
             <p class="text-[#7F7F7F] text-base md:text-lg leading-[20px]">
               Tropical Trade Corporation is positioned at Gujarat, India. We
@@ -155,6 +143,11 @@
               longer shelf life are some of the main attributes of our
               products.
             </p>
+            <button
+              class="bg-blue-900 text-white px-8 py-3 rounded-md inline-flex items-center gap-2 md:hidden flex w-[186px] border border-[#EA6E00]">
+              More About
+              <img src="/assests/images/right.png" alt="" />
+            </button>
           </div>
         </div>
       </div>
@@ -162,9 +155,13 @@
   </section>
 
   <!-- Hottest product  -->
-  <div class="container mx-auto px-4 py-12">
+  <div class="container mx-auto px-4 md:py-12 py-5">
     <div class="mb-8">
-      <div class="text-orange-500 font-medium mb-2">SHOP BY CATEGORY ——→</div>
+      <div class="text-orange-500 font-medium mb-2">
+        SHOP BY CATEGORY
+        <img src="../assests/images/Line 2.png" class="inline-block md:ms-2 ms-2 pt-0 w-[30px] md:w-[40px]"
+          alt="Line Decoration" />
+      </div>
       <div class="flex flex-col md:flex-row justify-between items-start mb-4">
         <div>
           <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
@@ -176,133 +173,156 @@
           </p>
         </div>
         <button
-          class="bg-blue-900 text-white px-6 py-2 mt-4 md:mt-0 rounded flex items-center gap-2 hover:bg-blue-800 transition-colors">
+          class="bg-blue-900 text-white px-6 py-2 mt-4 md:mt-0 rounded flex items-center gap-2 hover:bg-blue-800 transition-colors md:flex hidden border border-[#EA6E00]">
           View More
-          <img src="./assests/images/right.png" alt="" />
+          <img src="/assests/images/right.png" alt="" />
         </button>
       </div>
     </div>
 
-    <!-- Products Grid -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Food & Agro -->
-      <div class="product-card bg-white rounded-lg overflow-hidden shadow-md h-auto w-full">
-        <img src="./assests/images/Rectangle 1940.png" alt="Food & Agro" class="w-full h-[255px] object-cover" />
-        <div class="p-4 flex items-center justify-center pt-7">
-          <h3 class="text-lg md:text-xl font-semibold text-gray-900 font-bold leading-[30px]">
+
+      <div class="product-card bg-[#F7F7F7] rounded-lg overflow-hidden shadow-md h-auto w-full">
+        <img src="/assests/images/Rectangle 1940.png" alt="Food & Agro" class="w-full h-[240px] object-cover" />
+        <div class="p-4 flex items-center justify-center">
+          <h3 class="text-lg md:text-xl font-bold text-[#002469] font-bold">
             Food & Agro
           </h3>
         </div>
       </div>
 
-      <!-- Ceramic Tiles -->
+
       <div class="product-card bg-[#F7F7F7] rounded-lg overflow-hidden shadow-md h-auto w-full">
-        <img src="./assests/images/Rectangle 1088.png" alt="Ceramic Tiles" class="w-full h-[255px] object-cover" />
-        <div class="p-4 flex items-center justify-center pt-7">
-          <h3 class="text-lg md:text-xl font-semibold text-gray-900 font-bold leading-[30px]">
+        <img src="/assests/images/Rectangle 1088.png" alt="Ceramic Tiles" class="w-full h-[240px] object-cover" />
+        <div class="p-4 flex items-center justify-center">
+          <h3 class="text-lg md:text-xl font-bold text-[#002469] font-bold">
             Ceramic Tiles
           </h3>
         </div>
       </div>
 
-      <!-- Hotel Supplies -->
+
       <div class="product-card bg-[#F7F7F7] rounded-lg overflow-hidden shadow-md h-auto w-full">
-        <img src="./assests/images/Rectangle 1940 (1).png" alt="Hotel Supplies" class="w-full h-[255px] object-cover" />
-        <div class="p-4 flex items-center justify-center pt-7">
-          <h3 class="text-lg md:text-xl font-semibold text-gray-900 font-bold leading-[30px]">
+        <img src="/assests/images/Rectangle 1940.png" alt="Hotel Supplies" class="w-full h-[240px] object-cover" />
+        <div class="p-4 flex items-center justify-center">
+          <h3 class="text-lg md:text-xl font-bold text-[#002469] font-bold">
             Hotel Supplies
           </h3>
         </div>
       </div>
 
-      <!-- Printing & Merchandising -->
+
       <div class="product-card bg-[#F7F7F7] rounded-lg overflow-hidden shadow-md h-auto w-full">
-        <img src="./assests/images/Group 1116601139.png" alt="Printing & Merchandising"
-          class="w-full h-[255px] object-cover" />
-        <div class="p-4 flex items-center justify-center pt-7">
-          <h3 class="text-lg md:text-xl font-semibold text-gray-900 font-bold leading-[30px]">
+        <img src="/assests/images/printing.png" alt="Printing & Merchandising" class="w-full h-[240px] object-cover" />
+        <div class="p-4 flex items-center justify-center">
+          <h3 class="text-lg md:text-xl font-bold text-[#002469] font-bold">
             Printing & Merchandising
           </h3>
         </div>
       </div>
 
-      <!-- Plastic Products -->
+
       <div class="product-card bg-[#F7F7F7] rounded-lg overflow-hidden shadow-md h-auto w-full">
-        <img src="./assests/images/Rectangle 1941.png" alt="Plastic Products" class="w-full h-[255px] object-cover" />
-        <div class="p-4 flex items-center justify-center pt-7">
-          <h3 class="text-lg md:text-xl font-semibold text-gray-900 font-bold leading-[30px]">
+        <img src="/assests/images/Rectangle 1941.png" alt="Plastic Products" class="w-full h-[240px] object-cover" />
+        <div class="p-4 flex items-center justify-center">
+          <h3 class="text-lg md:text-xl font-bold text-[#002469] font-bold">
             Plastic Products
           </h3>
         </div>
       </div>
 
-      <!-- COVID-19 Related -->
+
       <div class="product-card bg-[#F7F7F7] rounded-lg overflow-hidden shadow-md h-auto w-full">
-        <img src="./assests/images/Rectangle 1942.png" alt="COVID-19 Related" class="w-full h-[255px] object-cover" />
-        <div class="p-4 flex items-center justify-center pt-7">
-          <h3 class="text-lg md:text-xl font-semibold text-gray-900 font-bold leading-[30px]">
+        <img src="/assests/images/Rectangle 1942.png" alt="COVID-19 Related" class="w-full h-[240px] object-cover" />
+        <div class="p-4 flex items-center justify-center">
+          <h3 class="text-lg md:text-xl font-bold text-[#002469] font-bold">
             COVID-19 Related
           </h3>
         </div>
       </div>
     </div>
+    <button
+      class="bg-blue-900 text-white px-6 py-2 mt-4 md:mt-0 rounded flex items-center gap-2 hover:bg-blue-800 transition-colors flex md:hidden border border-[#EA6E00]">
+      View More
+      <img src="/assests/images/right.png" alt="" />
+    </button>
   </div>
 
   <!-- counter Number -->
-  <section class="bg-[url('./assests/images/counter-bg.png')] lg:pt-20 px-4 lg:px-0 lg:pb-20 relative pt-10 pb-12">
-    <div class="container mx-auto px-4 py-12">
-      <div class="max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <!-- Stat Card 1 -->
-          <div class="relative pt-6 text-center">
-            <div class="relative z-10">
-              <h3 class="text-4xl font-bold text-white mb-3">1800</h3>
-              <p class="text-white w-[140px] border border-[#002155] py-2 bg-[#002155]">Email Attend</p>
-            </div>
-            <div class="absolute inset-0 border border-white/100 rounded"></div>
-          </div>
+  <div class="bg-[url('./assests/images/design.png')]">
+    <section class="lg:pt-20 px-4 lg:px-0 lg:pb-20 relative pt-10 pb-12 bg-cover bg-no-repeat bg-[#3a4b6d] opacity-90">
+      <div class="container mx-auto px-4 py-12">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-          <!-- Stat Card 2 -->
-          <div class="relative pt-6 text-center">
-            <div class="relative z-10">
-              <h3 class="text-4xl font-bold text-white mb-3">765</h3>
-              <p class="text-white w-[140px] border border-[#002155] py-2 bg-[#002155]">Telephonic Talk</p>
+            <div class="relative pt-6 p-9">
+              <div class="">
+                <h3 class="text-4xl font-bold text-white mb-3 text-center">
+                  1800
+                </h3>
+                <div class="bg-[url('./assests/images/button.png')] w-full bg-no-repeat absolute left-0 bottom-0 z-50">
+                  <p class="p-2 text-white">Email Attend</p>
+                </div>
+              </div>
+              <div class="absolute inset-0 border border-white/100 rounded"></div>
             </div>
-            <div class="absolute inset-0 border border-white/100 rounded"></div>
-          </div>
 
-          <!-- Stat Card 3 -->
-          <div class="relative pt-6 text-center">
-            <div class="relative z-10">
-              <h3 class="text-4xl font-bold text-white mb-3">960</h3>
-              <p class="text-white w-[140px] border border-[#002155] py-2 bg-[#002155]">Order Completed</p>
-            </div>
-            <div class="absolute inset-0 border border-white/100 rounded"></div>
-          </div>
 
-          <!-- Stat Card 4 -->
-          <div class="relative pt-6 text-center">
-            <div class="relative z-10">
-              <h3 class="text-4xl font-bold text-white mb-3">750</h3>
-              <p class="text-white w-[140px] border border-[#002155] py-2 bg-[#002155]">Happy Clients</p>
+            <div class="relative pt-6 p-9">
+              <div class="">
+                <h3 class="text-4xl font-bold text-white mb-3 text-center text-center">
+                  765
+                </h3>
+                <div class="bg-[url('./assests/images/button.png')] w-full bg-no-repeat absolute left-0 bottom-0 z-50">
+                  <p class="p-2 text-white">Telephonic Talk</p>
+                </div>
+              </div>
+              <div class="absolute inset-0 border border-white/100 rounded"></div>
             </div>
-            <div class="absolute inset-0 border border-white/100 rounded"></div>
+
+
+            <div class="relative pt-6 p-9">
+              <div class="">
+                <h3 class="text-4xl font-bold text-white mb-3 text-center text-center">
+                  960
+                </h3>
+                <div class="bg-[url('./assests/images/button.png')] w-full bg-no-repeat absolute left-0 bottom-0 z-50">
+                  <p class="p-2 text-white">Order Completed</p>
+                </div>
+              </div>
+              <div class="absolute inset-0 border border-white/100 rounded"></div>
+            </div>
+
+
+            <div class="relative pt-6 p-9">
+              <div class="">
+                <h3 class="text-4xl font-bold text-white mb-3 text-center text-center">
+                  750
+                </h3>
+                <div class="bg-[url('./assests/images/button.png')] w-full bg-no-repeat absolute left-0 bottom-0 z-50">
+                  <p class="p-2 text-white">Happy Clients</p>
+                </div>
+              </div>
+              <div class="absolute inset-0 border border-white/100 rounded"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+  </div>
   <!-- Recent news  -->
   <section class="recentnews relative">
     <div class="absolute mb-24 hidden sm:block">
-      <img src="./assests/images/Blog.png" alt="About Us Background"
+      <img src="assests/images/Blog.png" alt="About Us Background"
         class="w-[831px] h-[245px] inset-0 object-cover ps-10" />
     </div>
 
-    <div class="container mx-auto lg:pt-32 px-4 lg:px-0">
-      <div class="text-center mb-12">
-        <div class="text-orange-500 font-medium mb-4">BLOG ——→</div>
+    <div class="container mx-auto lg:pt-32 pt-5 px-4 lg:px-0">
+      <div class="md:text-center text-left mb-12">
+        <div class="text-orange-500 font-medium md:mb-4 mb-2">
+          BLOG<img src="../assests/images/Line 2.png" class="inline-block md:ms-2 ms-2 pt-0 w-[30px] md:w-[40px]"
+            alt="Line Decoration" />
+        </div>
         <h1 class="text-4xl font-bold text-gray-900 mb-4">Recent News</h1>
         <p class="text-gray-600 max-w-2xl mx-auto">
           Freshness, great taste, purity, high nutritional value, and longer
@@ -310,154 +330,169 @@
         </p>
       </div>
 
-      <!-- Blog Posts Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-        <div class="blog-card bg-white rounded-lg overflow-hidden shadow-lg h-[588px] w-">
-          <img src="./assests/images/Rectangle 1099.png" alt="Fresh vegetables" class="w-full h-[366px] object-cover" />
-          <div class="p-6">
-            <div class="flex items-center gap-2 text-sm text-gray-600 mb-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-8 md:w-[90%] w-full md:mx-auto">
+        <div class="bg-white md:bg-[#CCD7EE] rounded-lg shadow-md overflow-hidden">
+          <div class="relative">
+            <image src="../assests/images/Growers.png" alt="Growers" fill
+              class="object-cover w-full h-[332px] rounded-b-lg" />
+          </div>
+          <div class="p-4">
+            <div class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2">
+              <img src="../assests/images/date.png" alt="date" class="md:w-6 md:h-6 w-5 h-5" />
               June 15 2020
             </div>
-            <h3 class="text-xl font-semibold mb-4">
+            <h3 class="md:text-2xl text-base font-bold mb-3 text-[#1E1E1E]">
               National Association Of Wheats Growers
             </h3>
-            <div class="flex items-center gap-3">
-              <img src="./assests/images/Ellipse 3.png" alt="Lisa Smith" class="w-10 h-10 rounded-full" />
+            <div class="flex items-center">
+              <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
+                <img src="../assests/images/Ellipse 3.png" alt="Lisa Smith" class="w-full h-full object-cover" />
+              </div>
               <div>
-                <p class="text-orange-500 font-medium">Lisa Smith</p>
-                <p class="text-sm text-gray-600">Admin</p>
+                <p class="font-medium md:text-lg text-base text-[#EF7F1A]">
+                  Lisa Smith
+                </p>
+                <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="blog-card bg-white rounded-lg overflow-hidden shadow-lg h-[588px]">
-          <img src="./assests/images/Rectangle 1000.png" alt="Various fruits and nuts"
-            class="w-full h-[366px] object-cover" />
-          <div class="p-6">
-            <div class="flex items-center gap-2 text-sm text-gray-600 mb-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="relative">
+            <image src="../assests/images/Wheats.png" alt="Wheats" fill
+              class="object-cover w-full h-[332px] rounded-b-lg" />
+          </div>
+          <div class="p-4">
+            <div class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2">
+              <img src="../assests/images/date.png" alt="date" class="md:w-6 md:h-6 w-5 h-5" />
               June 15 2020
             </div>
-            <h3 class="text-xl font-semibold mb-4">
-              Awesome Freeze Concern Hits Wheat Farms
+            <h3 class="md:text-2xl text-base font-bold mb-3 text-[#1E1E1E]">
+              Awesome Freeze Concern Hits Wheats Farms
             </h3>
-            <div class="flex items-center gap-3">
-              <img src="./assests/images/Ellipse 3.png" alt="Ryan Thomas" class="w-10 h-10 rounded-full" />
+            <div class="flex items-center">
+              <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
+                <img src="../assests/images/Ellipse 3.png" alt="Lisa Smith" class="w-full h-full object-cover" />
+              </div>
               <div>
-                <p class="text-orange-500 font-medium">Ryan Thomas</p>
-                <p class="text-sm text-gray-600">Admin</p>
+                <p class="font-medium md:text-lg text-base text-[#EF7F1A]">
+                  Ryan Thomas
+                </p>
+                <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="blog-card bg-white rounded-lg overflow-hidden shadow-lg h-[588px]">
-          <img src="./assests/images/Rectangle 1001.png" alt="Nuts and grains" class="w-full h-[366px] object-cover" />
-          <div class="p-6">
-            <div class="flex items-center gap-2 text-sm text-gray-600 mb-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden md:block hidden">
+          <div class="relative">
+            <image src="../assests/images/Consumer.png" alt="Consumer" fill
+              class="object-cover w-full h-[332px] rounded-b-lg" />
+          </div>
+          <div class="p-4">
+            <div class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2">
+              <img src="../assests/images/date.png" alt="date" class="md:w-6 md:h-6 w-5 h-5" />
               June 15 2020
             </div>
-            <h3 class="text-xl font-semibold mb-4">
+            <h3 class="md:text-2xl text-base font-bold mb-3 text-[#1E1E1E]">
               The Best Ways Consumer Trends Impact
             </h3>
-            <div class="flex items-center gap-3">
-              <img src="./assests/images/Ellipse 3.png" alt="Ryan Thomas" class="w-10 h-10 rounded-full" />
+            <div class="flex items-center">
+              <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
+                <img src="../assests/images/Ellipse 3.png" alt="Lisa Smith" class="w-full h-full object-cover" />
+              </div>
               <div>
-                <p class="text-orange-500 font-medium">Ryan Thomas</p>
-                <p class="text-sm text-gray-600">Admin</p>
+                <p class="font-medium md:text-lg text-base text-[#EF7F1A]">
+                  Ryan Thomas
+                </p>
+                <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="text-center">
+      <div class="flex justify-center">
         <button
-          class="bg-blue-900 text-white px-8 py-3 rounded-md inline-flex items-center gap-2 hover:bg-blue-800 transition-colors">
+          class="bg-blue-900 text-white px-6 py-2 mt-4 md:mt-0 rounded flex items-center gap-2 hover:bg-blue-800 transition-colors md:flex hidden border border-[#EA6E00]">
           View More
-          <img src="./assests/images/right.png" alt="" />
+          <img src="/assests/images/right.png" alt="" />
         </button>
       </div>
     </div>
     <div class="absolute mb-24 hidden sm:block right-0 bottom-28 w-[215px] h-[318px]">
-      <img src="./assests/images/pngwing 7.png" alt="About Us Background" class="inset-0 object-cover ps-10" />
+      <img src="assests/images/pngwing 7.png" alt="About Us Background" class="inset-0 object-cover ps-10" />
     </div>
   </section>
 
   <!-- fresh product  -->
-  <section class="lg:pt-20 px-4 lg:px-0 lg:pb-20 relative pt-10 pb-12">
-    <div class="container mx-auto px-4 lg:px-0">
+  <section class="lg:pt-20 px-4 lg:px-0 lg:pb-10 relative pt-10 pb-12">
+    <div class="px-4 lg:px-0">
       <div class="min-h-[600px] flex flex-col md:flex-row">
-        <!-- Left Image Section -->
+
         <div class="w-full md:w-1/2 relative min-h-[300px] md:min-[400px] mb-[50px]">
           <img src="./assests/images/fresh product.png" alt="Fresh products in field"
-            class="absolute inset-0 w-full h-full object-cover" />
+            class="absolute inset-0 w-full h-full object-cover rounded-lg" />
         </div>
 
-        <!-- Right Content Section -->
+
         <div
-          class="w-full md:w-1/2 bg-[#1e2d4d] p-8 md:p-12 flex flex-col justify-center mt-[100px] absolute right-[93px]">
-          <div class="max-w-xl">
-            <!-- Section Header -->
+          class="w-[80%] md:w-[60%] bg-[#1e2d4d] p-5 md:p-12 flex flex-col justify-center md:mt-[58px] mt-[225px] absolute md:right-[2px] right-[30px] rounded-lg">
+          <div class="max-w-4xl md:p-5">
+
             <div class="flex items-center gap-2 text-orange-400 mb-4">
-              <span class="uppercase text-sm font-semibold">Why Choose Us →</span>
+              <span class="uppercase text-sm font-semibold">Why Choose Us
+                <img src="../assests/images/Line 2.png"
+                  class="inline-block md:ms-2 ms-2 pt-0 w-[30px] md:w-[40px] md:h-[10px]"
+                  alt="Line Decoration" /></span>
               <!-- <div class="w-6 h-[2px] bg-orange-400"></div>   -->
             </div>
 
-            <!-- Main Heading -->
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+
+            <h2 class="text-lg md:text-4xl lg:text-5xl font-bold text-white md:mb-6 mb-3">
               We Providing More Fresh Products
             </h2>
 
-            <!-- Description -->
-            <p class="text-gray-300 mb-12">
-              Tropical Trade Corporation is positioned at Gujarat, India. We have carved a distinct
-              position in offering a wide range of products that includes Food & Agro, Ceramic Tiles,
-              Hotel Supplies, Plastic Products, Printing & Merchandising & etc.
+
+            <p class="text-[#FFFFFF] md:text-base text-sm md:font-semibold font-medium md:mb-12 mb-3">
+              Tropical Trade Corporation is positioned at Gujarat, India. We
+              have carved a distinct position
+              <span class="md:flex hidden">in offering a wide range of products that includes Food &
+                Agro, Ceramic Tiles, Hotel Supplies, Plastic Products,
+                Printing & Merchandising & etc.</span>
             </p>
 
-            <!-- Features Grid -->
+
             <div class="grid md:grid-cols-2 gap-8">
-              <!-- Feature 1 -->
-              <div class="flex flex-col items-start gap-4">
-                <div class="p-3 bg-orange-400/10 rounded-lg">
-                  <img src="./assests//images/Vector.png" width="30px" alt="">
-                  <i data-lucide="shield" class="w-6 h-6 text-orange-400"></i>
+
+              <div class="flex flex-col items-start md:gap-4 gap-1">
+                <div class="">
+                  <img src="./assests//images/Vector.png" width="30px" alt="" />
+                  <i data-lucide="shield" class="md:w-6 md:h-6 w-3 h-3 text-orange-400"></i>
                 </div>
                 <h3 class="text-xl font-semibold text-white">
                   Extended Warranty
                 </h3>
                 <p class="text-gray-300">
-                  Freshness, great taste, purity, high the main attributes products.
+                  Freshness, great taste, purity, high the main attributes
+                  products.
                 </p>
               </div>
 
-              <!-- Feature 2 -->
-              <div class="flex flex-col items-start gap-4">
-                <div class="p-3 bg-orange-400/10 rounded-lg">
-                  <img src="./assests/images/Vector-2.png" width="30px" alt="">
+
+              <div class="flex flex-col items-start md:gap-4 gap-1">
+                <div class="">
+                  <img src="./assests/images/Vector-2.png" width="30px" alt="" />
                   <i data-lucide="thumbs-up" class="w-6 h-6 text-orange-400"></i>
                 </div>
                 <h3 class="text-xl font-semibold text-white">
                   Friendly Support
                 </h3>
                 <p class="text-gray-300">
-                  Freshness, great taste, purity, high the main attributes products.
+                  Freshness, great taste, purity, high the main attributes
+                  products.
                 </p>
               </div>
             </div>
@@ -466,18 +501,18 @@
       </div>
     </div>
   </section>
-  <!-- fresh product  -->
+
 
   <!-- provideservices -->
 
-  <section class="provideservices lg:pt-20 px-4 lg:px-0 lg:pb-20 relative pt-10 pb-12">
+  <section class="provideservices lg:pt-20 px-4 lg:px-0 lg:pb-20 relative pt-10 pb-12 overflow-hidden">
     <div class="absolute bottom-4 left-5">
       <img src="./assests/images/pngwing 7.png" class="w-[215px] h-[318px]" alt="" />
     </div>
     <div class="container mx-auto max-w-8xl px-4 lg:px-0">
-      <!-- Header Section -->
-      <div class="text-center mb-16 pt-10">
-        <div class="text-orange-500 font-medium mb-4 flex items-center justify-center gap-2">
+
+      <div class="md:text-center mb-16 pt-10">
+        <div class="text-orange-500 font-medium mb-4 flex md:items-center md:justify-center gap-2">
           WHAT WE DO FOR YOU
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd"
@@ -485,17 +520,17 @@
               clip-rule="evenodd" />
           </svg>
         </div>
-        <h1 class="text-4xl font-bold text-gray-900">
+        <h1 class="md:text-4xl text-2xl font-bold text-gray-900">
           We Provide Our Service With Our Expert Team
         </h1>
       </div>
 
-      <!-- Team Grid -->
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Team Member 1 -->
-        <div class="team-card rounded-lg overflow-hidden shadow-md w-[342px] h-[457px]">
+
+        <div class="team-card rounded-lg overflow-hidden shadow-md md:w-[342px] h-[457px] ">
           <img src="./assests/images/Rectangle 1104.png" alt="Emily Blunts"
-            class="w-full max-w-[342px] h-[380px] aspect-[3/4] object-cover" />
+            class="w-full md:max-w-[342px] h-[380px] aspect-[3/4] object-cover" />
           <div class="image-overlay"></div>
           <div class="social-icons">
             <a href="#" class="social-icon">
@@ -523,8 +558,7 @@
           </div>
         </div>
 
-        <!-- Team Member 2 -->
-        <div class="team-card rounded-lg overflow-hidden shadow-md w-[342px] h-[457px]">
+        <div class="team-card rounded-lg overflow-hidden shadow-md md:w-[342px] h-[457px]">
           <img src="./assests/images/Rectangle 1106.png" alt="Willie Rocke"
             class="w-full max-w-[342px] h-[380px] aspect-[3/4] object-cover" />
           <div class="image-overlay"></div>
@@ -554,8 +588,7 @@
           </div>
         </div>
 
-        <!-- Team Member 3 -->
-        <div class="team-card rounded-lg overflow-hidden shadow-md w-[342px] h-[457px]">
+        <div class="team-card rounded-lg overflow-hidden shadow-md md:w-[342px] h-[457px]">
           <img src="./assests/images/Rectangle 1105.png" alt="Jean Scotter"
             class="w-full max-w-[342px] h-[380px] aspect-[3/4] object-cover" />
           <div class="image-overlay"></div>
@@ -585,8 +618,8 @@
           </div>
         </div>
 
-        <!-- Team Member 4 -->
-        <div class="team-card rounded-lg overflow-hidden shadow-md w-[342px] h-[457px]">
+
+        <div class="team-card rounded-lg overflow-hidden shadow-md md:w-[342px] h-[457px]">
           <img src="./assests/images/Rectangle 1106.png" alt="Mendas Root"
             class="w-full max-w-[342px] h-[380px] aspect-[3/4] object-cover" />
           <div class="image-overlay"></div>
@@ -619,45 +652,10 @@
     </div>
   </section>
 
+
   <!-- slider section start -->
-  <!-- <section class="bg-[url('./assests/images/slider-contact.png')] flex items-center justify-center">
-    <div class="py-16 px-4">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-center text-white mb-12">
-          Why Customers Love Us ?
-        </h2>
-
-        <div class="relative">
-          <div class="flex items-center justify-center gap-6">
-            <button onclick="prevSlide()"
-              class="absolute left-0 z-10 p-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors"
-              aria-label="Previous testimonial">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-
-            <div id="testimonialContainer" class="flex gap-6 overflow-hidden">
-              <!-- Testimonials will be inserted here by JavaScript -->
-  <!-- </div>
-
-            <button onclick="nextSlide()"
-              class="absolute right-0 z-10 p-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors"
-              aria-label="Next testimonial">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  <!-- </section> -->
-
-
-  <section class="bg-[url('./assests/images/slider-contact.png')] bg-cover bg-center flex items-center justify-center">
+  <section
+    class="bg-[url('./assests/images/slider-contact.png')] bg-cover bg-center flex items-center justify-center overflow-hidden">
     <div class="py-16 px-4">
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">
@@ -665,7 +663,7 @@
         </h2>
         <div class="relative">
           <div class="flex items-center justify-between">
-            <!-- Previous Button -->
+
             <button onclick="prevSlide()"
               class="hidden md:block absolute -left-24 z-10 p-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors"
               aria-label="Previous testimonial">
@@ -675,12 +673,9 @@
               </svg>
             </button>
 
-            <!-- Testimonials Container -->
             <div id="testimonialContainer" class="flex gap-6 overflow-hidden">
-              <!-- Testimonials will be added dynamically -->
             </div>
 
-            <!-- Next Button -->
             <button onclick="nextSlide()"
               class="hidden md:block absolute -right-24 z-10 p-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors"
               aria-label="Next testimonial">
@@ -695,10 +690,8 @@
     </div>
   </section>
 
-  <!-- slider section end -->
-
   <!-- certified success  -->
-  <section class="py-16 px-4 mx-auto relative">
+  <section class="py-16 md:px-4 md:mx-auto relative">
     <div class="absolute top-4 left-5">
       <img src="./assests/images/CERTIFICATIONS.png" alt="Certification Icon" />
     </div>
@@ -717,28 +710,32 @@
         </h2>
       </div>
 
-      <div class="shadow-md">
-        <!-- First Row -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div class="md:shadow-md">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 space-y-2 md:space-y-0">
           <div
-            class="bg-gray-100 p-8 rounded-lg flex items-center justify-center w-full max-w-[390px] mx-auto h-[256px]">
+            class="bg-gray-100 p-8 rounded-lg flex items-center justify-center w-full max-w-[390px] mx-auto md:h-[256px] h-[200px]">
             <img src="./assests/images/Link___8 1.png" alt="Real Estate Certification" class="w-[190px] h-[145px]" />
           </div>
-          <div class="bg-white p-8 rounded-lg flex items-center justify-center w-full max-w-[390px] mx-auto h-[256px]">
+          <div
+            class="bg-white p-8 rounded-lg flex items-center justify-center w-full max-w-[390px] mx-auto md:h-[256px] h-[200px]">
             <img src="./assests/images/image 22.png" alt="Spices Board India" class="w-[215px] h-[145px]" />
           </div>
           <div
-            class="bg-gray-100 p-8 rounded-lg flex items-center justify-center w-full max-w-[390px] mx-auto h-[256px]">
+            class="bg-white p-8 rounded-lg flex items-center justify-center w-full max-w-[390px] mx-auto md:h-[256px] h-[200px] md:hidden flex">
+            <img src="./assests/images/image 25.png" alt="FSSAI Certification" class="w-[215px] h-[145px]" />
+          </div>
+          <div
+            class="bg-gray-100 p-8 rounded-lg flex items-center justify-center w-full max-w-[390px] mx-auto md:h-[256px] h-[200px]">
             <img src="./assests/images/Evergreen-Business-Logo 1.png" alt="Evergreen Certification"
               class="w-[215px] h-[111px]" />
           </div>
-          <div class="bg-white p-8 rounded-lg flex items-center justify-center w-full max-w-[390px] mx-auto h-[256px]">
+          <div
+            class="bg-white p-8 rounded-lg flex items-center justify-center w-full max-w-[390px] mx-auto md:h-[256px] h-[200px] md:flex hidden">
             <img src="./assests/images/image 25.png" alt="FSSAI Certification" class="w-[215px] h-[145px]" />
           </div>
         </div>
 
-        <!-- Second Row -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:flex hidden">
           <div class="bg-white p-8 rounded-lg flex items-center justify-center w-full max-w-[390px] mx-auto h-[256px]">
             <img src="./assests/images/image 24.png" alt="Go4WorldBusiness" class="w-[215px] h-[156px]" />
           </div>
@@ -761,7 +758,7 @@
   </section>
 
   <!-- footer -->
-  <footer class="bg-[#25395F] text-white pt-14  relative">
+  <footer class="bg-[#25395F] text-white pt-14 relative">
     <div class="absolute hidden sm:block top-[12px] left-0">
       <img src="assests/images/div.pattern-layer-one.png" alt="About Us Background"
         class="inset-0 object-cover w-[200px] h-[220px] lg:w-[387px] lg:h-[433px]" />
@@ -769,7 +766,6 @@
 
     <div class="container mx-auto px-4 lg:px-0 pb-4">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Logo and Contact Section -->
         <div class="flex flex-col items-start gap-4">
           <div class="flex items-center gap-2">
             <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
@@ -782,8 +778,6 @@
             Contact
           </button>
         </div>
-
-        <!-- Company Links -->
         <div>
           <h3 class="text-orange-500 font-semibold mb-4">Company</h3>
           <ul class="space-y-2">
@@ -792,8 +786,6 @@
             <li><a href="#" class="hover:text-gray-300">Blog</a></li>
           </ul>
         </div>
-
-        <!-- Customer Links -->
         <div>
           <h3 class="text-orange-500 font-semibold mb-4">Customer</h3>
           <ul class="space-y-2">
@@ -815,8 +807,6 @@
           </ul>
         </div>
       </div>
-
-      <!-- Social Media Links -->
       <div class="mt-8 text-center flex justify-center items-center">
         <p class="text-sm md:text-lg font-bold me-3">Followers :</p>
         <div class="flex justify-center gap-4">
@@ -843,17 +833,13 @@
       <img src="assests/images/div.pattern-layer-two.png" alt="About Us Background"
         class="inset-0 object-cover w-[200px] h-[220px] lg:w-[387px] lg:h-[433px]" />
     </div>
-    <div class="py-3 bg-[#25395F] pt-20 ">
-      <p class="text-left text-sm md:text-base text-gray-400 ps-20 border-t-[1px] pt-4 text-center">
+    <div class="py-3 bg-[#25395F] pt-20">
+      <p class="text-left text-sm md:text-base text-gray-400 md:ps-20 ps-1 border-t-[1px] pt-4 text-center">
         Tropical Trade Corporation Proudly Powered by Themeszab
       </p>
     </div>
   </footer>
-
-
 </body>
 <script src="./assests/js/script.js"></script>
-
-
 
 </html>
