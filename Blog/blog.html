@@ -1,492 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- font css -->
-    <link rel="stylesheet" href="./assests/css/font.css" />
-    <!-- custom css -->
-    <link rel="stylesheet" href="./assests/css/style.css" />
-  </head>
-  <body>
-    <!-- header -->
-    <header>
-      <nav
-        class="flex flex-wrap items-center justify-between w-full py-4 md:py-4 px-4 text-lg text-gray-700 bg-white container mx-auto"
-      >
-        <div>
-          <img
-            src="../assests/images/Group 1116601132.png"
-            class="w-[150px]"
-            alt=""
-          />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- font css -->
+  <link rel="stylesheet" href="./assests/css/font.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./assests/css/style.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav
+      class="flex items-center justify-between w-full py-4 md:py-4 px-4 text-lg text-gray-700 bg-white container mx-auto">
+      <div>
+        <img src="../assests/images/Group 1116601132.png" class="w-[150px]" alt="" />
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+
+      <div class="hidden w-full md:flex md:items-center md:justify-between md:w-auto" id="menu">
+        <ul class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0 md:pe-80">
+          <li>
+            <a class="md:p-4 py-2 font-semibold block text-gray-600 hover:text-[#002469]" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block font-semibold text-gray-600 hover:text-[#002469]"
+              href="../About/about.html">About Us</a>
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block font-semibold text-gray-600 hover:text-[#002469]"
+              href="../Product/product.html">Products</a>
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block font-semibold text-gray-600 hover:text-[#002469]" href="./blog.html">Blog</a>
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block font-semibold text-gray-600 hover:text-[#002469]" href="../contact.html">Contact
+              Us</a>
+          </li>
+        </ul>
+        <button class="bg-[#002469] text-white px-4 py-2 rounded-md flex items-center space-x-2">
+          <span> Enquire Now</span>
+          <img src="../assests/images/right.png" alt="" />
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- banner -->
+  <section class="bg-cover bg-center p-12 sm:p-10 md:p-16 lg:p-20 xl:p-52"
+    style="background-image: url('../assests/images/bg.png')">
+    <div class="container mx-auto">
+      <h2 class="text-white text-xl sm:text-4xl md:text-5xl font-bold flex sm:items-center text-center sm:text-left">
+        BLOG
+        <img src="../assests/images/Line 1.png" class="md:pt-3 ms-3 pt-1 w-[30px] h-[20px] md:w-[50px] md:h-[30px]"
+          alt="Line Decoration" />
+      </h2>
+    </div>
+  </section>
+
+  <!-- blog -->
+  <section class="py-20 relative">
+    <img src="../assests/images/pngwing 13.png" alt="About Us Background"
+      class="absolute top-[0px] right-[0px] w-[30%] object-cover md:flex hidden" />
+    <img src="../assests/images/pngwing 2.png" alt="About Us Background"
+      class="absolute top-[0px] left-[0px] h-[20%] w-[20%] md:flex hidden" />
+    <img src="../assests/images/pngwing 13.png" alt="About Us Background"
+      class="absolute bottom-[-367px] left-[0px] w-[40%] object-cover md:flex hidden z-40" />
+    <img src="../assests/images/pngwing 8.png" alt="About Us Background"
+      class="absolute top-[730px] right-[0px] w-[10%] object-cover md:flex hidden" />
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 w-[80%] mx-auto">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="relative">
+            <image src="../assests/images/Growers.png" alt="Growers" fill
+              class="object-cover w-full h-[332px] rounded-b-lg" />
+          </div>
+          <div class="p-4">
+            <div class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2">
+              <img src="../assests/images/date.png" alt="date" class="md:w-6 md:h-6 w-5 h-5" />
+              June 15 2020
+            </div>
+            <h3 class="md:text-xl text-base font-bold mb-3 text-[#1E1E1E]">
+              National Association Of Wheats Growers
+            </h3>
+            <div class="flex items-center">
+              <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
+                <img src="../assests/images/Ellipse 3.png" alt="Lisa Smith" class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <p class="font-medium md:text-lg text-base text-[#EF7F1A]">Lisa Smith</p>
+                <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="relative">
+            <image src="../assests/images/Wheats.png" alt="Wheats" fill
+              class="object-cover w-full h-[332px] rounded-b-lg" />
+          </div>
+          <div class="p-4">
+            <div class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2">
+              <img src="../assests/images/date.png" alt="date" class="md:w-6 md:h-6 w-5 h-5" />
+              June 15 2020
+            </div>
+            <h3 class="md:text-xl text-base font-bold mb-3 text-[#1E1E1E]">
+              Awesome Freeze Concern Hits Wheats Farms
+            </h3>
+            <div class="flex items-center">
+              <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
+                <img src="../assests/images/Ellipse 3.png" alt="Lisa Smith" class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <p class="font-medium md:text-lg text-base text-[#EF7F1A]">Ryan Thomas</p>
+                <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="../Blog/blogview.html">
+          <div class="bg-[#CCD7EE] rounded-lg shadow-md overflow-hidden">
+            <div class="relative">
+              <image src="../assests/images/Consumer.png" alt="Consumer" fill
+                class="object-cover w-full h-[332px] rounded-b-lg" />
+            </div>
+            <div class="p-4">
+              <div class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2">
+                <img src="../assests/images/date.png" alt="date" class="md:w-6 md:h-6 w-5 h-5" />
+                June 15 2020
+              </div>
+              <h3 class="md:text-xl text-base font-bold mb-3 text-[#1E1E1E]">
+                The Best Ways Consumer Trends Impact
+              </h3>
+              <div class="flex items-center">
+                <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
+                  <img src="../assests/images/Ellipse 3.png" alt="Lisa Smith" class="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p class="font-medium md:text-lg text-base text-[#EF7F1A]">Ryan Thomas</p>
+                  <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="relative">
+            <image src="../assests/images/Mechanics.png" alt="Mechanics" fill
+              class="object-cover w-full h-[332px] rounded-b-lg" />
+          </div>
+          <div class="p-4">
+            <div class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2">
+              <img src="../assests/images/date.png" alt="date" class="md:w-6 md:h-6 w-5 h-5" />
+              June 15 2020
+            </div>
+            <h3 class="md:text-xl text-base font-bold mb-3 text-[#1E1E1E]">
+              The Advances In The Mechanics Sector
+            </h3>
+            <div class="flex items-center">
+              <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
+                <img src="../assests/images/Ellipse 3.png" alt="Lisa Smith" class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <p class="font-medium md:text-lg text-base text-[#EF7F1A]">Lisa Smith</p>
+                <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="relative">
+            <image src="../assests/images/Strategy.png" alt="Strategy" fill
+              class="object-cover w-full h-[332px] rounded-b-lg" />
+          </div>
+          <div class="p-4">
+            <div class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2">
+              <img src="../assests/images/date.png" alt="date" class="md:w-6 md:h-6 w-5 h-5" />
+              June 15 2020
+            </div>
+            <h3 class="md:text-xl text-base font-bold mb-3 text-[#1E1E1E]">
+              The Roth Strategy We Wise Retirement
+            </h3>
+            <div class="flex items-center">
+              <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
+                <img src="../assests/images/Ellipse 3.png" alt="Lisa Smith" class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <p class="font-medium md:text-lg text-base text-[#EF7F1A]">Ryan Thomas</p>
+                <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="relative">
+            <image src="../assests/images/Constructio.png" alt="Constructio" fill
+              class="object-cover w-full h-[332px] rounded-b-lg" />
+          </div>
+          <div class="p-4">
+            <div class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2">
+              <img src="../assests/images/date.png" alt="date" class="md:w-6 md:h-6 w-5 h-5" />
+              June 15 2020
+            </div>
+            <h3 class="md:text-xl text-base font-bold mb-3 text-[#1E1E1E]">
+              Improvements In Construction Techniques
+            </h3>
+            <div class="flex items-center">
+              <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
+                <img src="../assests/images/Ellipse 3.png" alt="Lisa Smith" class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <p class="font-medium md:text-lg text-base text-[#EF7F1A]">Ryan Thomas</p>
+                <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 flex justify-center">
+        <a class="bg-[#002469] border border-[#EA6E00] text-white px-4 py-2 rounded-md flex items-center space-x-2 justify-center"
+          href="../Blog/blogview.html">
+          <span> Load More</span>
+          <img src="../assests/images/right.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </section>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          id="menu-button"
-          class="h-6 w-6 cursor-pointer md:hidden block"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-
-        <div
-          class="hidden w-full md:flex md:items-center md:justify-between md:w-auto"
-          id="menu"
-        >
-          <ul
-            class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0 md:pe-80"
-          >
-            <li>
-              <a
-                class="md:p-4 py-2 font-semibold block text-gray-600 hover:text-[#002469]"
-                href="../index.html"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                class="md:p-4 py-2 block font-semibold text-gray-600 hover:text-[#002469]"
-                href="../About/about.html"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                class="md:p-4 py-2 block font-semibold text-gray-600 hover:text-[#002469]"
-                href="../Product/product.html"
-                >Products</a
-              >
-            </li>
-            <li>
-              <a
-                class="md:p-4 py-2 block font-semibold text-gray-600 hover:text-[#002469]"
-                href="./blog.html"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                class="md:p-4 py-2 block font-semibold text-gray-600 hover:text-[#002469]"
-                href="../contact.html"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
+  <!-- footer -->
+  <footer class="bg-[#25395F] text-white pt-14 relative">
+    <div class="absolute hidden sm:block top-[12px] left-0">
+      <img src="../assests/images/div.pattern-layer-one.png" alt="About Us Background"
+        class="inset-0 object-cover w-[200px] h-[220px] lg:w-[387px] lg:h-[433px]" />
+    </div>
+    <div class="container mx-auto px-4 lg:px-0 pb-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="flex flex-col items-start gap-4">
+          <div class="flex items-center gap-2">
+            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+              <span class="text-[#1e3a8a] font-bold text-xl">TTC</span>
+            </div>
+            <span class="text-lg font-semibold">Tropical Trade Corporation</span>
+          </div>
           <button
-            class="bg-[#002469] text-white px-4 py-2 rounded-md flex items-center space-x-2"
-          >
-            <span> Enquire Now</span>
-            <img src="../assests/images/right.png" alt="" />
+            class="px-10 py-2 border border-white rounded-md hover:bg-white text-[#FD5D14] transition-colors mt-8">
+            Contact
           </button>
         </div>
-      </nav>
-    </header>
-
-    <!-- banner -->
-    <section
-      class="bg-cover bg-center p-12 sm:p-10 md:p-16 lg:p-20 xl:p-52"
-      style="background-image: url('../assests/images/bg.png')"
-    >
-      <div class="container mx-auto">
-        <h2
-          class="text-white text-xl sm:text-4xl md:text-5xl font-bold flex sm:items-center text-center sm:text-left"
-        >
-          BLOG
-          <img
-            src="../assests/images/Line 1.png"
-            class="md:pt-3 ms-3 pt-1 w-[30px] h-[20px] md:w-[50px] md:h-[30px]"
-            alt="Line Decoration"
-          />
-        </h2>
+        <div class="z-[10000]">
+          <h3 class="text-orange-500 font-semibold mb-4">Company</h3>
+          <ul class="space-y-2">
+            <li><a href="../About/about.html" class="hover:text-gray-300">About Company</a></li>
+            <li><a href="../Product/product.html" class="hover:text-gray-300">Products</a></li>
+            <li><a href="../Blog/blog.html" class="hover:text-gray-300">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-orange-500 font-semibold mb-4">Customer</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="hover:text-gray-300">Help And Support</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-300">Shipping And Delivery</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-300">Payment Method</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-300">Terms And Conditions</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
-
-    <!-- blog -->
-    <section class="py-20 relative">
-        <img
-        src="../assests/images/pngwing 13.png"
-        alt="About Us Background"
-        class="absolute top-[0px] right-[0px] w-[30%] object-cover md:flex hidden"
-      />
-      <img
-        src="../assests/images/pngwing 2.png"
-        alt="About Us Background"
-        class="absolute top-[0px] left-[0px] h-[20%] w-[20%] md:flex hidden"
-      />
-      <img
-        src="../assests/images/pngwing 13.png"
-        alt="About Us Background"
-        class="absolute bottom-[-367px] left-[0px] w-[40%] object-cover md:flex hidden z-40"
-      />
-      <img
-      src="../assests/images/pngwing 8.png"
-      alt="About Us Background"
-      class="absolute top-[730px] right-[0px] w-[10%] object-cover md:flex hidden"
-    />
-      <div class="container mx-auto">
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 w-[80%] mx-auto"
-        >
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="relative">
-              <image
-                src="../assests/images/Growers.png"
-                alt="Growers"
-                fill
-                class="object-cover w-full h-[332px] rounded-b-lg"
-              />
-            </div>
-            <div class="p-4">
-              <div
-                class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2"
-              >
-                <img
-                  src="../assests/images/date.png"
-                  alt="date"
-                  class="md:w-6 md:h-6 w-5 h-5"
-                />
-                June 15 2020
-              </div>
-              <h3 class="md:text-xl text-base font-bold mb-3 text-[#1E1E1E]">
-                National Association Of Wheats Growers
-              </h3>
-              <div class="flex items-center">
-                <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
-                  <img
-                    src="../assests/images/Ellipse 3.png"
-                    alt="Lisa Smith"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <p class="font-medium md:text-lg text-base text-[#EF7F1A]">Lisa Smith</p>
-                  <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="relative">
-              <image
-                src="../assests/images/Wheats.png"
-                alt="Wheats"
-                fill
-                class="object-cover w-full h-[332px] rounded-b-lg"
-              />
-            </div>
-            <div class="p-4">
-              <div
-                class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2"
-              >
-                <img
-                  src="../assests/images/date.png"
-                  alt="date"
-                  class="md:w-6 md:h-6 w-5 h-5"
-                />
-                June 15 2020
-              </div>
-              <h3 class="md:text-xl text-base font-bold mb-3 text-[#1E1E1E]">
-                Awesome Freeze Concern Hits Wheats Farms
-              </h3>
-              <div class="flex items-center">
-                <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
-                  <img
-                    src="../assests/images/Ellipse 3.png"
-                    alt="Lisa Smith"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <p class="font-medium md:text-lg text-base text-[#EF7F1A]">Ryan Thomas</p>
-                  <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a href="../Blog/blogview.html">
-            <div class="bg-[#CCD7EE] rounded-lg shadow-md overflow-hidden">
-                <div class="relative">
-                  <image
-                    src="../assests/images/Consumer.png"
-                    alt="Consumer"
-                    fill
-                    class="object-cover w-full h-[332px] rounded-b-lg"
-                  />
-                </div>
-                <div class="p-4">
-                  <div
-                    class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2"
-                  >
-                    <img
-                      src="../assests/images/date.png"
-                      alt="date"
-                      class="md:w-6 md:h-6 w-5 h-5"
-                    />
-                    June 15 2020
-                  </div>
-                  <h3 class="md:text-xl text-base font-bold mb-3 text-[#1E1E1E]">
-                    The Best Ways Consumer Trends Impact
-                  </h3>
-                  <div class="flex items-center">
-                    <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
-                      <img
-                        src="../assests/images/Ellipse 3.png"
-                        alt="Lisa Smith"
-                        class="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div>
-                      <p class="font-medium md:text-lg text-base text-[#EF7F1A]">Ryan Thomas</p>
-                      <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="mt-8 text-center flex justify-center items-center">
+        <p class="text-sm md:text-lg font-bold me-3">Followers :</p>
+        <div class="flex justify-center gap-4">
+          <a href="#"
+            class="w-8 h-8 rounded-full bg-white text-[#1e3a8a] flex items-center justify-center hover:bg-gray-200 transition-colors">
+            <img src="../assests/images/facebook.png" alt="" />
           </a>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="relative">
-              <image
-                src="../assests/images/Mechanics.png"
-                alt="Mechanics"
-                fill
-                class="object-cover w-full h-[332px] rounded-b-lg"
-              />
-            </div>
-            <div class="p-4">
-              <div
-                class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2"
-              >
-                <img
-                  src="../assests/images/date.png"
-                  alt="date"
-                  class="md:w-6 md:h-6 w-5 h-5"
-                />
-                June 15 2020
-              </div>
-              <h3 class="md:text-xl text-base font-bold mb-3 text-[#1E1E1E]">
-                The Advances In The Mechanics Sector
-              </h3>
-              <div class="flex items-center">
-                <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
-                  <img
-                    src="../assests/images/Ellipse 3.png"
-                    alt="Lisa Smith"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <p class="font-medium md:text-lg text-base text-[#EF7F1A]">Lisa Smith</p>
-                  <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="relative">
-              <image
-                src="../assests/images/Strategy.png"
-                alt="Strategy"
-                fill
-                class="object-cover w-full h-[332px] rounded-b-lg"
-              />
-            </div>
-            <div class="p-4">
-              <div
-                class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2"
-              >
-                <img
-                  src="../assests/images/date.png"
-                  alt="date"
-                  class="md:w-6 md:h-6 w-5 h-5"
-                />
-                June 15 2020
-              </div>
-              <h3 class="md:text-xl text-base font-bold mb-3 text-[#1E1E1E]">
-                The Roth Strategy We Wise Retirement
-              </h3>
-              <div class="flex items-center">
-                <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
-                  <img
-                    src="../assests/images/Ellipse 3.png"
-                    alt="Lisa Smith"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <p class="font-medium md:text-lg text-base text-[#EF7F1A]">Ryan Thomas</p>
-                  <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="relative">
-              <image
-                src="../assests/images/Constructio.png"
-                alt="Constructio"
-                fill
-                class="object-cover w-full h-[332px] rounded-b-lg"
-              />
-            </div>
-            <div class="p-4">
-              <div
-                class="flex items-center md:text-lg text-base font-medium text-[#1E1E1E] mb-3 gap-2"
-              >
-                <img
-                  src="../assests/images/date.png"
-                  alt="date"
-                  class="md:w-6 md:h-6 w-5 h-5"
-                />
-                June 15 2020
-              </div>
-              <h3 class="md:text-xl text-base font-bold mb-3 text-[#1E1E1E]">
-                Improvements In Construction Techniques
-              </h3>
-              <div class="flex items-center">
-                <div class="md:w-14 md:h-14 w-10 h-10 rounded-full overflow-hidden mr-4">
-                  <img
-                    src="../assests/images/Ellipse 3.png"
-                    alt="Lisa Smith"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <p class="font-medium md:text-lg text-base text-[#EF7F1A]">Ryan Thomas</p>
-                  <p class="text-base font-medium text-[#7F7F7F]">Admin</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <a href="#"
+            class="w-8 h-8 rounded-full bg-white text-[#1e3a8a] flex items-center justify-center hover:bg-gray-200 transition-colors">
+            <img src="../assests/images/linkedin.png" alt="" />
+          </a>
+          <a href="#"
+            class="w-8 h-8 rounded-full bg-white text-[#1e3a8a] flex items-center justify-center hover:bg-gray-200 transition-colors">
+            <img src="../assests/images/instagram.png" alt="" />
+          </a>
+          <a href="#"
+            class="w-8 h-8 rounded-full bg-white text-[#1e3a8a] flex items-center justify-center hover:bg-gray-200 transition-colors">
+            <img src="../assests/images/twitter.png" alt="" />
+          </a>
         </div>
-         <div class="mt-8 flex justify-center">
-            <a
-              class="bg-[#002469] border border-[#EA6E00] text-white px-4 py-2 rounded-md flex items-center space-x-2 justify-center"
-              href="../Blog/blogview.html"
-            >
-              <span> Load More</span>
-              <img src="../assests/images/right.png" alt="" />
-            </a>
-          </div>
       </div>
-    </section>
+    </div>
+    <div class="absolute hidden sm:block top-[12px] right-0">
+      <img src="../assests/images/div.pattern-layer-two.png" alt="About Us Background"
+        class="inset-0 object-cover w-[200px] h-[220px] lg:w-[387px] lg:h-[433px]" />
+    </div>
+    <div class="py-3 bg-[#25395F] pt-20">
+      <p class="text-left text-sm md:text-base text-gray-400 md:ps-20 ps-1 border-t-[1px] pt-4 text-center">
+        Tropical Trade Corporation Proudly Powered by Themeszab
+      </p>
+    </div>
+  </footer>
+</body>
+<!-- tailwind js -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- custom js -->
+<script src="../assests/js/script.js"></script>
 
-    <!-- footer -->
-    <footer class="bg-[#25395F] text-white pt-14 relative">
-      <div class="absolute hidden sm:block top-[12px] left-0">
-        <img
-          src="../assests/images/div.pattern-layer-one.png"
-          alt="About Us Background"
-          class="inset-0 object-cover w-[200px] h-[220px] lg:w-[387px] lg:h-[433px]"
-        />
-      </div>
-      <div class="container mx-auto px-4 lg:px-0 pb-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="flex flex-col items-start gap-4">
-            <div class="flex items-center gap-2">
-              <div
-                class="w-12 h-12 bg-white rounded-full flex items-center justify-center"
-              >
-                <span class="text-[#1e3a8a] font-bold text-xl">TTC</span>
-              </div>
-              <span class="text-lg font-semibold"
-                >Tropical Trade Corporation</span
-              >
-            </div>
-            <button
-              class="px-10 py-2 border border-white rounded-md hover:bg-white text-[#FD5D14] transition-colors mt-8"
-            >
-              Contact
-            </button>
-          </div>
-          <div>
-            <h3 class="text-orange-500 font-semibold mb-4">Company</h3>
-            <ul class="space-y-2">
-              <li><a href="#" class="hover:text-gray-300">About Company</a></li>
-              <li><a href="#" class="hover:text-gray-300">Products</a></li>
-              <li><a href="#" class="hover:text-gray-300">Blog</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-orange-500 font-semibold mb-4">Customer</h3>
-            <ul class="space-y-2">
-              <li>
-                <a href="#" class="hover:text-gray-300">Help And Support</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-gray-300"
-                  >Shipping And Delivery</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-gray-300">Payment Method</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-gray-300">Terms And Conditions</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-gray-300">Privacy Policy</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="mt-8 text-center flex justify-center items-center">
-          <p class="text-sm md:text-lg font-bold me-3">Followers :</p>
-          <div class="flex justify-center gap-4">
-            <a
-              href="#"
-              class="w-8 h-8 rounded-full bg-white text-[#1e3a8a] flex items-center justify-center hover:bg-gray-200 transition-colors"
-            >
-              <img src="../assests/images/facebook.png" alt="" />
-            </a>
-            <a
-              href="#"
-              class="w-8 h-8 rounded-full bg-white text-[#1e3a8a] flex items-center justify-center hover:bg-gray-200 transition-colors"
-            >
-              <img src="../assests/images/linkedin.png" alt="" />
-            </a>
-            <a
-              href="#"
-              class="w-8 h-8 rounded-full bg-white text-[#1e3a8a] flex items-center justify-center hover:bg-gray-200 transition-colors"
-            >
-              <img src="../assests/images/instagram.png" alt="" />
-            </a>
-            <a
-              href="#"
-              class="w-8 h-8 rounded-full bg-white text-[#1e3a8a] flex items-center justify-center hover:bg-gray-200 transition-colors"
-            >
-              <img src="../assests/images/twitter.png" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="absolute hidden sm:block top-[12px] right-0">
-        <img
-          src="../assests/images/div.pattern-layer-two.png"
-          alt="About Us Background"
-          class="inset-0 object-cover w-[200px] h-[220px] lg:w-[387px] lg:h-[433px]"
-        />
-      </div>
-      <div class="py-3 bg-[#25395F] pt-20">
-        <p
-          class="text-left text-sm md:text-base text-gray-400 md:ps-20 ps-1 border-t-[1px] pt-4 text-center"
-        >
-          Tropical Trade Corporation Proudly Powered by Themeszab
-        </p>
-      </div>
-    </footer>
-  </body>
-  <!-- tailwind js -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- custom js -->
-  <script src="../assests/js/script.js"></script>
 </html>
